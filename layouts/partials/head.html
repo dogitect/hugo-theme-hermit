@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {{- partial "meta.html" . -}}
+
+  {{/* Google Fonts - Roboto */}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  {{/* SCSS Processing with Hugo Pipes */}}
+  {{- $scss := resources.Get "scss/main.scss" -}}
+  {{- $options := dict "targetPath" "css/style.css" -}}
+  {{- $style := $scss | toCSS $options -}}
+  {{- if hugo.IsProduction -}}
+    {{- $style = $style | minify | fingerprint -}}
+  {{- end -}}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  {{/* Favicon */}}
+  <link rel="icon" type="image/png" href="{{ "favicon.png" | absURL }}">
+
+  {{/* Title */}}
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+  {{ hugo.Generator }}
+</head>
