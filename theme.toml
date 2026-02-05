@@ -1,0 +1,12 @@
+name = "Hermit Hugo Theme"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A minimal single-page Hugo theme with GitHub Markdown styling and Roboto font"
+homepage = "https://github.com/dogitect/hugo-theme-hermit"
+tags = ["minimal", "single-page", "documentation", "github-markdown", "roboto"]
+features = ["syntax highlighting", "mermaid diagrams", "responsive"]
+min_version = "0.155.0"
+
+[author]
+  name = "Dogitect"
+  homepage = "https://github.com/dogitect"
