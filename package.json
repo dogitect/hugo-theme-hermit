@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write \"assets/scss/**/*.scss\" \"*.js\"",
+    "lint": "stylelint \"assets/scss/**/*.scss\" && eslint .",
+    "lint:fix": "stylelint \"assets/scss/**/*.scss\" --fix && eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1",
+    "stylelint": "^17.1.1",
+    "stylelint-config-standard-scss": "^17.0.0"
+  }
+}
