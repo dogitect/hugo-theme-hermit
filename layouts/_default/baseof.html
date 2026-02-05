@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+{{- partial "head.html" . -}}
+<body>
+  <main class="main-content">
+    <div class="container">
+      {{- block "main" . }}{{- end }}
+    </div>
+  </main>
+
+  <script>
+    // Mermaid lazy load
+    (function() {
+      var mermaidBlocks = document.querySelectorAll('pre.mermaid');
+      if (mermaidBlocks.length === 0) return;
+
+      var mermaidLoaded = false;
+
+      function loadMermaid() {
+        if (mermaidLoaded) return;
+        mermaidLoaded = true;
+        import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs')
+          .then(function(module) {
+            module.default.initialize({
+              startOnLoad: false,
+              theme: 'default',
+              securityLevel: 'loose'
+            });
+            module.default.run();
+          });
+      }
+
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              loadMermaid();
+              observer.disconnect();
+            }
+          });
+        }, { rootMargin: '200px' });
+
+        mermaidBlocks.forEach(function(block) {
+          observer.observe(block);
+        });
+      } else {
+        loadMermaid();
+      }
+    })();
+  </script>
+</body>
+</html>
