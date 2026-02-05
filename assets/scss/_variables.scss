@@ -1,0 +1,65 @@
+// ==========================================================================
+// Color Palette - GitHub Markdown Style
+// ==========================================================================
+
+// Text Colors
+$color-text: #1f2328;
+$color-text-secondary: #59636e;
+$color-text-muted: #818b98;
+
+// Background Colors
+$color-bg: #fff;
+$color-bg-code: #f6f8fa;
+$color-bg-code-inline: rgba(129, 139, 152, 0.12);
+
+// Link Colors
+$color-link: #0969da;
+
+// Border Colors
+$color-border: #d1d9e0;
+$color-border-light: #d1d9e0b3;
+
+// ==========================================================================
+// Typography - Roboto (Google Style)
+// ==========================================================================
+
+$font-family-base:
+  'Roboto',
+  -apple-system,
+  blinkmacsystemfont,
+  'Segoe UI',
+  'Noto Sans',
+  helvetica,
+  arial,
+  sans-serif;
+$font-family-mono:
+  'Roboto Mono', ui-monospace, sfmono-regular, 'SF Mono', menlo, consolas, 'Liberation Mono',
+  monospace;
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+// Font Sizes
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-code: 85%;
+
+// Line Heights
+$line-height-base: 1.5;
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+$container-max-width: 980px;
+$container-padding: 32px;
+
+// ==========================================================================
+// Responsive Breakpoints
+// ==========================================================================
+
+$breakpoint-lg: 1012px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 544px;
