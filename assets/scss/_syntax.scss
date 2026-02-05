@@ -1,0 +1,153 @@
+// ==========================================================================
+// Syntax Highlighting - GitHub Style
+// Works with Hugo's built-in Chroma highlighter
+// ==========================================================================
+
+.highlight {
+  margin: 0 0 16px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  pre {
+    margin: 0;
+    padding: 16px;
+    overflow-x: auto;
+  }
+
+  code {
+    background: transparent;
+    padding: 0;
+  }
+}
+
+// Line numbers
+.highlight .ln {
+  color: $color-text-muted;
+  margin-right: 12px;
+  user-select: none;
+}
+
+// Chroma syntax highlighting colors (GitHub Light)
+.chroma {
+  background-color: $color-bg-code;
+
+  // Comments
+  .c,
+  .ch,
+  .cm,
+  .c1,
+  .cs {
+    color: #6e7781;
+    font-style: italic;
+  }
+
+  // Keywords
+  .k,
+  .kc,
+  .kd,
+  .kn,
+  .kp,
+  .kr,
+  .kt {
+    color: #cf222e;
+  }
+
+  // Strings
+  .s,
+  .sa,
+  .sb,
+  .sc,
+  .dl,
+  .sd,
+  .s2,
+  .se,
+  .sh,
+  .si,
+  .sx,
+  .sr,
+  .s1,
+  .ss {
+    color: #0a3069;
+  }
+
+  // Numbers
+  .m,
+  .mb,
+  .mf,
+  .mh,
+  .mi,
+  .il,
+  .mo,
+  .mx {
+    color: #0550ae;
+  }
+
+  // Names
+  .n,
+  .na,
+  .nb,
+  .nc,
+  .no,
+  .nd,
+  .ni,
+  .ne,
+  .nf,
+  .nl,
+  .nn,
+  .nt,
+  .nv {
+    color: #1f2328;
+  }
+
+  // Functions
+  .nf,
+  .fm {
+    color: #8250df;
+  }
+
+  // Operators
+  .o,
+  .ow {
+    color: #cf222e;
+  }
+
+  // Punctuation
+  .p {
+    color: #1f2328;
+  }
+
+  // Built-in
+  .nb {
+    color: #0550ae;
+  }
+
+  // Class names
+  .nc {
+    color: #953800;
+  }
+
+  // Attributes
+  .na {
+    color: #0550ae;
+  }
+}
+
+// Mermaid diagrams - centered display
+.mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Pre blocks with mermaid class
+pre.mermaid {
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: center;
+}
