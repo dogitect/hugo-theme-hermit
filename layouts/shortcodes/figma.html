@@ -1,0 +1,10 @@
+{{- $url := .Get 0 -}}
+{{- $title := .Get "title" | default "Figma Design" -}}
+{{- $embedUrl := printf "https://www.figma.com/embed?embed_host=hugo&theme=light&hide-ui=1&url=%s" $url -}}
+<div class="figma-embed">
+  <iframe
+    src="{{ $embedUrl }}"
+    title="{{ $title }}"
+    allowfullscreen
+  ></iframe>
+</div>
