@@ -1,0 +1,21 @@
+baseURL = "https://dogitect.github.io/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+title = "Project Name"
+theme = "hugo-theme-hermit"
+
+# Disable unused page types for single-page theme
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+# Hugo 0.155.2 configuration
+[markup]
+  [markup.highlight]
+    codeFences = true
+    lineNos = false
+    style = "github"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = "A clean, minimal Hugo theme for single page documentation"
