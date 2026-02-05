@@ -1,0 +1,15 @@
+// ==========================================================================
+// Layout Styles - GitHub Markdown Style
+// ==========================================================================
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+  width: 100%;
+}
+
+// Main Content - Simple single page layout
+.main-content {
+  padding: 32px 0;
+}
