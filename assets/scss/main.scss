@@ -1,0 +1,12 @@
+// ==========================================================================
+// Hugo Architect-Style Theme
+// Main SCSS Entry Point
+// ==========================================================================
+
+@import 'variables';
+@import 'base';
+@import 'layout';
+@import 'typography';
+@import 'components';
+@import 'syntax';
+@import 'responsive';
