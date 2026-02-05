@@ -1,0 +1,60 @@
+// ==========================================================================
+// Base Styles - GitHub Markdown Style
+// ==========================================================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+  text-size-adjust: 100%;
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-base;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  overflow-wrap: break-word;
+  color: $color-text;
+  background-color: $color-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: content-box;
+  border-radius: 6px;
+}
+
+hr {
+  height: 1px;
+  padding: 0;
+  margin: 24px 0;
+  background-color: $color-border;
+  border: 0;
+}
