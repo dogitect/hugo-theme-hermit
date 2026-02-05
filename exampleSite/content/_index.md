@@ -202,7 +202,7 @@ jobs:
 
 ### Figma Design
 
-{{< figma "https://www.figma.com/slides/mjZi2OZx7Bg8GjY18mcyGi/Project-DOGITECT---Brand-Guidelines?t=m0psWxPNK2cSWJdF-1" >}}
+{{< figma "https://www.figma.com/slides/mjZi2OZx7Bg8GjY18mcyGi/Brand-Guidelines" >}}
 
 ## Mermaid Diagrams
 
