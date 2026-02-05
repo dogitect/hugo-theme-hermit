@@ -94,12 +94,6 @@ title = "My Project"
 
 ## Shortcodes
 
-### Figure
-
-```markdown
-{{</* figure src="image.jpg" alt="Description" caption="Caption text" */>}}
-```
-
 ### YouTube
 
 ```markdown
