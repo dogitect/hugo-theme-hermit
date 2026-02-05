@@ -1,0 +1,48 @@
+// ==========================================================================
+// Responsive Styles - GitHub Markdown Style
+// ==========================================================================
+
+@mixin respond-to($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Large screens
+@include respond-to($breakpoint-lg) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+// Tablet and below
+@include respond-to($breakpoint-md) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .main-content {
+    padding: 24px 0;
+  }
+}
+
+// Mobile
+@include respond-to($breakpoint-sm) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .main-content {
+    padding: 16px 0;
+  }
+
+  pre {
+    padding: 12px;
+    font-size: 83%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
