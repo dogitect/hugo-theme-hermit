@@ -121,4 +121,4 @@ PRs accepted.
 
 ## License
 
-MIT
+MIT &copy; Leon Xia
