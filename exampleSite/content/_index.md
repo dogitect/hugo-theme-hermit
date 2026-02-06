@@ -202,7 +202,7 @@ jobs:
 
 ### Figma Design
 
-{{< figma "https://www.figma.com/slides/mjZi2OZx7Bg8GjY18mcyGi/Brand-Guidelines" >}}
+{{< figma "https://www.figma.com/design/2B1bhgtJUVzrKfOoP8PKjU/Simple-Design-System" >}}
 
 ## Mermaid Diagrams
 
