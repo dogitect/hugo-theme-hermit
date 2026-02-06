@@ -2,8 +2,8 @@
 {{- $title := .Get "title" | default "Figma Design" -}}
 {{- $baseUrl := replace $url "www.figma.com" "embed.figma.com" -}}
 {{- $separator := cond (strings.Contains $baseUrl "?") "&" "?" -}}
-{{- $embedUrl := printf "%s%sembed-host=hugo&theme=light&footer=false" $baseUrl $separator -}}
-<div class="figma-embed">
+{{- $embedUrl := printf "%s%sembed-host=hugo&scaling=scale-down-width&hide-ui=1&footer=false" $baseUrl $separator -}}
+<div class="video-embed">
   <iframe
     src="{{ $embedUrl }}"
     title="{{ $title }}"
