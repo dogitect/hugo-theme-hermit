@@ -194,16 +194,6 @@ jobs:
 
 {{< figure src="example.jpg" alt="Example Image" caption="Image Title" >}}
 
-## Embeds
-
-### YouTube Video
-
-{{< youtube dQw4w9WgXcQ >}}
-
-### Figma Design
-
-{{< figma "https://www.figma.com/design/2B1bhgtJUVzrKfOoP8PKjU/Simple-Design-System" >}}
-
 ## Mermaid Diagrams
 
 ### Flowchart
