@@ -253,22 +253,6 @@ pie title Browser Market Share
     "Other" : 8
 ```
 
-### Gantt Chart
-
-```mermaid
-gantt
-    title Project Timeline
-    dateFormat YYYY-MM-DD
-    section Planning
-        Research       :a1, 2024-01-01, 7d
-        Design         :a2, after a1, 5d
-    section Development
-        Frontend       :b1, after a2, 14d
-        Backend        :b2, after a2, 14d
-    section Testing
-        QA             :c1, after b1, 7d
-```
-
 ## Special Elements
 
 ### Footnotes
