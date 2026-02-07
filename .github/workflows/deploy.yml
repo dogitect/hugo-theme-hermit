@@ -45,11 +45,12 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          cd exampleSite
           hugo \
+            --source exampleSite \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --themesDir ..
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
