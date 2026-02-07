@@ -91,17 +91,6 @@ title = "My Project"
       unsafe = true
 ```
 
-## Shortcodes
-
-### Mermaid
-
-````markdown
-```mermaid
-flowchart LR
-    A[Start] --> B[End]
-```
-````
-
 ## Contributing
 
 PRs accepted.
