@@ -9,7 +9,6 @@ A minimal single-page Hugo theme with GitHub Markdown styling.
 - Roboto font family
 - Syntax highlighting with GitHub style
 - Mermaid diagrams support (lazy loaded)
-- YouTube and Figma embeds
 - Responsive design
 - SEO optimized with Open Graph and Twitter Cards
 
@@ -93,18 +92,6 @@ title = "My Project"
 ```
 
 ## Shortcodes
-
-### YouTube
-
-```markdown
-{{</* youtube VIDEO_ID */>}}
-```
-
-### Figma
-
-```markdown
-{{</* figma "FIGMA_URL" */>}}
-```
 
 ### Mermaid
 
